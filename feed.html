@@ -6,203 +6,94 @@
     <title>Feed | Instaclone</title>
 </head>
 <body>
-    <header class="Header">
-    
-        <div class="Header__Column">
-            
-            <a href="feed.html">
-                <img src="images/headerImage.png" alt="Logo" class="Column__Logo">
-            </a>
-
-        </div>
-
-        <div class="Header__Column">
-
-                <input type="text" class="Colum__Input" placeholder="Search">
-    
-        </div>
-
-        <div class="Header__Column">
-
-            <!-- a.Column__Link*3>i.fa -->
-
-            <a href="explore.html" class="Column__Link">
-                <i class="fa fa-compass"></i>
-            </a>
-            <a href="#" class="Column__Link">
-                <i class="fa fa-heart-o"></i>
-            </a>
-            <a href="profile.html" class="Column__Link">
-                <i class="fa fa-user-o"></i>
-            </a>
-
-        </div>
-    
-    </header>
-    
-    <main>
-
-        <div class="Photo">
-
-            <section class="Photo__Section">
-                <img src="images/logo.png" alt="" class="Section__Image">
-                <span class="Section__Username">
-                    <a href="profile.html" class="Username__Link">yj_tattooer</a>
-                </span>
-            </section>
-
-            <section class="Photo__Image">
-                <img src="images/imageOne.jpg" alt="" class="Image__Source">
-            </section>
-
-            <div class="Photo__Meta">
-                <section class="Meta__Section">
-                    <div class="Section__Icons">
+    <nav class="Navigation" role="navigation">
+        <div class="Navigation__Wrapper">
+            <div class="Navigation__Columns">
+                <div class="Navigation__Column">
+                    <a href="feed.html">
+                        <img src="images/headerImage.png" alt="Logo" class="Column__Logo">
+                    </a>
+                </div>
+                <div class="Navigation__Column">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" class="Colum__Input" placeholder="Search">
+                </div>
+                <div class="Navigation__Column">
+                    <a href="explore.html" class="Column__Link">
+                        <i class="fa fa-compass"></i>
+                    </a>
+                    <a href="#" class="Column__Link">
                         <i class="fa fa-heart-o"></i>
-                        <i class="fa fa-comment-o"></i>
-                    </div>
-                    <div class="Section__Likes">46 likes</div>
-                </section>
-                <section class="Meta__Section">
-                    <span class="Section__Username">yj_tattooer</span>
-                    <p class="Section__Description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ratione eius repellendus, at! Vero, nemo rem excepturi, accusamus consequuntur necessitatibus magni distinctio inventore non, repudiandae molestiae maiores dignissimos consectetur ratione.</p>
-                </section>
-                <section class="Meta__Section">
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque reiciendis sequi vero molestiae quas aliquam fugit pariatur in ea. Illum repellat consequuntur dolor dolores minima similique cupiditate, consectetur eveniet.</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Iste perferendis animi, et amet suscipit consequatur deleniti deserunt quia. Deleniti, vitae veniam obcaecati nesciunt quis consequuntur? Eius corporis at enim a quo, harum, illo doloribus sequi recusandae perferendis commodi.</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Odio porro reiciendis iste totam earum, qui aliquid consequatur! Rerum provident ratione cumque, repellat dolorem, laudantium nesciunt praesentium atque ad quos incidunt accusantium nostrum, ea modi. Ducimus impedit, autem sed.</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Assumenda nesciunt, magnam voluptatibus expedita fuga quae cupiditate, quos, eaque nulla sint ut quas blanditiis. Rerum dolorem eum, incidunt temporibus eius doloremque nostrum enim sint et. Laboriosam non magni eveniet?</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Et magnam eos atque error eius, nesciunt hic totam, laudantium quasi architecto consectetur odio excepturi a ea officia in, id tempore nisi consequuntur! Amet eos quam magni reprehenderit, blanditiis eum!</p>
-                    </article>
-                </section>
-                <div class="Meta__Input">
-                    <input type="text" placeholder="Add a comment...">
-                    <i class="fa fa-ellipsis-h"></i>
+                    </a>
+                    <a href="profile.html" class="Column__Link">
+                        <i class="fa fa-user-o"></i>
+                    </a>
                 </div>
             </div>
-        </div>
+        </div>    
+    </nav>
+    
+    <main role="main">
 
-        <div class="Photo">
+        <section class="Feed">
 
-            <section class="Photo__Section">
-                <img src="images/logo.png" alt="" class="Section__Image">
-                <span class="Section__Username">
-                    <a href="profile.html" class="Username__Link">yj_tattooer</a>
-                </span>
-            </section>
+            <article class="Feed__Photo Photo">
 
-            <section class="Photo__Image">
-                <img src="images/imageTwo.jpg" alt="" class="Image__Source">
-            </section>
+                <header class="Photo__Header">
+                    <a href="profile.html" class="Header__Avatar-Container">
+                        <img src="images/avatar.jpg" alt="serranoarevalo" class="Header__Avatar" />
+                    </a>
+                    <a href="profile.html" class="Header__Username">
+                        serranoarevalo
+                    </a>
+                </header>
 
-            <div class="Photo__Meta">
-                <section class="Meta__Section">
-                    <div class="Section__Icons">
-                        <i class="fa fa-heart-o"></i>
-                        <i class="fa fa-comment-o"></i>
+                <div class="Photo__File-Container">
+                    <img src="images/imageOne.jpg" alt="" class="Photo__File">
+                </div>
+
+                <div class="Photo__Meta">
+                    <section class="Photo__Buttons">
+                        <div class="Photo__Button">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                        <div class="Photo__Button">
+                            <i class="fa fa-comment-o"></i>
+                        </div>
+                    </section>
+
+                    <section class="Photo__Likes-Container">
+                        <span class="Photo__Likes">222 likes</span>
+                    </section>
+
+                    <div class="Photo__Comments">
+                        <ul class="Photo__Comment-List">
+                            <li class="Photo__Comment Comment">
+                                <a href="profile.html" class="Comment__Username">serranoarevalo</a>
+                                <span class="Comment__Content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="Section__Likes">46 likes</div>
-                </section>
-                <section class="Meta__Section">
-                    <span class="Section__Username">yj_tattooer</span>
-                    <p class="Section__Description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ratione eius repellendus, at! Vero, nemo rem excepturi, accusamus consequuntur necessitatibus magni distinctio inventore non, repudiandae molestiae maiores dignissimos consectetur ratione.</p>
-                </section>
-                <section class="Meta__Section">
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque reiciendis sequi vero molestiae quas aliquam fugit pariatur in ea. Illum repellat consequuntur dolor dolores minima similique cupiditate, consectetur eveniet.</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Iste perferendis animi, et amet suscipit consequatur deleniti deserunt quia. Deleniti, vitae veniam obcaecati nesciunt quis consequuntur? Eius corporis at enim a quo, harum, illo doloribus sequi recusandae perferendis commodi.</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Odio porro reiciendis iste totam earum, qui aliquid consequatur! Rerum provident ratione cumque, repellat dolorem, laudantium nesciunt praesentium atque ad quos incidunt accusantium nostrum, ea modi. Ducimus impedit, autem sed.</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Assumenda nesciunt, magnam voluptatibus expedita fuga quae cupiditate, quos, eaque nulla sint ut quas blanditiis. Rerum dolorem eum, incidunt temporibus eius doloremque nostrum enim sint et. Laboriosam non magni eveniet?</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Et magnam eos atque error eius, nesciunt hic totam, laudantium quasi architecto consectetur odio excepturi a ea officia in, id tempore nisi consequuntur! Amet eos quam magni reprehenderit, blanditiis eum!</p>
-                    </article>
-                </section>
-                <div class="Meta__Input">
-                    <input type="text" placeholder="Add a comment...">
-                    <i class="fa fa-ellipsis-h"></i>
+
+                    <section class="Photo__Time-Ago-Contaienr">
+                        <span class="Photo__TimeAgo">
+                            5 hours ago
+                        </span>
+                    </section>
+
+                    
+                    <section class="Photo__Add-Comment">
+                        <form action="POST" class="Photo__Form">
+                            <textarea name="comment" id="" cols="30" rows="10" class="Photo__Input"></textarea>
+                        </form>
+                        <div class="Photo_More-Actions">
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </div>
+                    </section>
                 </div>
             </div>
-        </div>
 
-        <div class="Photo">
-
-            <section class="Photo__Section">
-                <img src="images/logo.png" alt="" class="Section__Image">
-                <span class="Section__Username">
-                    <a href="profile.html" class="Username__Link">yj_tattooer</a>
-                </span>
-            </section>
-
-            <section class="Photo__Image">
-                <img src="images/imageThree.jpg" alt="" class="Image__Source">
-            </section>
-
-            <div class="Photo__Meta">
-                <section class="Meta__Section">
-                    <div class="Section__Icons">
-                        <i class="fa fa-heart-o"></i>
-                        <i class="fa fa-comment-o"></i>
-                    </div>
-                    <div class="Section__Likes">46 likes</div>
-                </section>
-                <section class="Meta__Section">
-                    <span class="Section__Username">yj_tattooer</span>
-                    <p class="Section__Description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ratione eius repellendus, at! Vero, nemo rem excepturi, accusamus consequuntur necessitatibus magni distinctio inventore non, repudiandae molestiae maiores dignissimos consectetur ratione.</p>
-                </section>
-                <section class="Meta__Section">
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eaque reiciendis sequi vero molestiae quas aliquam fugit pariatur in ea. Illum repellat consequuntur dolor dolores minima similique cupiditate, consectetur eveniet.</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Iste perferendis animi, et amet suscipit consequatur deleniti deserunt quia. Deleniti, vitae veniam obcaecati nesciunt quis consequuntur? Eius corporis at enim a quo, harum, illo doloribus sequi recusandae perferendis commodi.</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Odio porro reiciendis iste totam earum, qui aliquid consequatur! Rerum provident ratione cumque, repellat dolorem, laudantium nesciunt praesentium atque ad quos incidunt accusantium nostrum, ea modi. Ducimus impedit, autem sed.</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Assumenda nesciunt, magnam voluptatibus expedita fuga quae cupiditate, quos, eaque nulla sint ut quas blanditiis. Rerum dolorem eum, incidunt temporibus eius doloremque nostrum enim sint et. Laboriosam non magni eveniet?</p>
-                    </article>
-                    <article class="Section__Comment">
-                        <span class="Section__Username">serranoarevalo</span>
-                        <p class="Comment__Text">Et magnam eos atque error eius, nesciunt hic totam, laudantium quasi architecto consectetur odio excepturi a ea officia in, id tempore nisi consequuntur! Amet eos quam magni reprehenderit, blanditiis eum!</p>
-                    </article>
-                </section>
-                <div class="Meta__Input">
-                    <input type="text" placeholder="Add a comment...">
-                    <i class="fa fa-ellipsis-h"></i>
-                </div>
-            </div>
-        </div>
+        </section>
 
     </main>
 
