@@ -33,56 +33,55 @@
         </div>    
     </nav>
     
-    <main>
+    <main role="main">
 
-        <div class="Profile">
+        <article class="Profile">
 
-            <header>
+            <header class="Profile__Header">
 
-                <div class="Profile__Column">
+                <div class="Profile__Avatar">
 
-                    <figure class="Column__ProfilePicture">
-                        <img src="images/avatar.jpg" alt="" class="ProfilePicture__Image">
-                    </figure>
+                    <div class="Profile__Avatar-Container">
+                        <img src="images/avatar.jpg" alt="" class="Profile__Avatar-Picture" />
+                    </div>
 
                 </div>
                 
-                <div class="Profile__Column">
+                <div class="Profile__Info">
 
-                        <div class="Column__Box">
+                        <div class="Profile__Info-Section">
                             
-                            <h1 class="Box__Title">serranoarevalo</h1>
+                            <h1 class="Profile__Title">serranoarevalo</h1>
 
-                            <a href="edit-profile.html" class="Box__Button">Edit Profile</a>
+                            <a href="edit-profile.html" class="Profile__Edit-Button">Edit Profile</a>
 
                             <i class="fa fa-cog"></i>
 
                         </div>
-                        <div class="Column__Box">
 
-                                <div class="Box__Counters">
-                                    <div class="Counters__Counter">
-                                        <span class="Counter__Number">312</span>
-                                        <span class="Counter__Name">posts</span>
-                                    </div>
-                                    
-                                    <div class="Counters__Counter">
-                                        <span class="Counter__Number">4,393</span>
-                                        <span class="Counter__Name">followers</span>
-                                    </div>
-                                    
-                                    <div class="Counters__Counter">
-                                        <span class="Counter__Number">47</span>
-                                        <span class="Counter__Name">following</span>
-                                    </div>
-                                </di
-                                v>
+                        <div class="Profile__Info-Section">
+
+                                <ul class="Profile__Data-List">
+                                    <li class="Profile__Data-Item">
+                                        <span class="Profile__Data-Number">234</span>
+                                        posts
+                                    </li>
+                                    <li class="Profile__Data-Item">
+                                        <span class="Profile__Data-Number">4,393</span>
+                                        followers
+                                    </li>
+                                    <li class="Profile__Data-Item">
+                                        <span class="Profile__Data-Number">48</span>
+                                        following
+                                    </li>
+                                </ul>
 
                         </div>
-                        <div class="Column__Box">
-                            <span class="Box__FullName">Nicolás Serrano</span>
-                            <span class="Box__Description"> Traveling the world forever. Previously: Chiang Mai, Thailand 🇹🇭 Now: Bagan, Myanmar 🇲🇲 Next: Seoul, South Korea 🇰🇷</span>
-                            <a href="http://serranoarevalo.com" class="Box__Link">serranoarevalo.com</a>
+
+                        <div class="Profile__Description">
+                            <h2 class="Profile__Full-Name">Nicolás Serrano</h2>
+                            <span class="Profile__Description-Text"> Traveling the world forever. Previously: Chiang Mai, Thailand 🇹🇭 Now: Bagan, Myanmar 🇲🇲 Next: Seoul, South Korea 🇰🇷</span>
+                            <a href="http://serranoarevalo.com" class="Profile__Link">serranoarevalo.com</a>
                         </div>
 
                 </div>
@@ -91,51 +90,27 @@
 
 
             <div class="Profile__Grid">
-                <div class="Grid__Item">
-                    <a href="" class="Item__Link">
-                        <img src="images/imageOne.jpg" alt="" class="Link__Image">
+                
+                    <a href="image-detail.html" class="Profile__Grid-Item">
+                        
+                        <div class="Profile__Photo-Container">
+
+                            <img src="images/imageOne.jpg" class="Profile__Photo" />
+
+                        </div>
+
+                        <div class="Profile__Photo-Numbers">
+                            <div class="Profile__Photo-Number">
+                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                458
+                            </div>
+                            <div class="Profile__Photo-Number">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                30
+                            </div>
+                        </div>
+
                     </a>
-                    <div class="Item__Overlay">
-                        <div class="Overlay__Item">
-                            <i class="fa fa-heart Item__Icon"></i>
-                            <span class="Item__Number">700</span>
-                        </div>
-                        <div class="Overlay__Item">
-                            <i class="fa fa-comment Item__Icon"></i>
-                            <span class="Item__Number">14</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="Grid__Item">
-                    <a href="" class="Item__Link">
-                        <img src="images/imageTwo.jpg" alt="" class="Link__Image">
-                    </a>
-                    <div class="Item__Overlay">
-                        <div class="Overlay__Item">
-                            <i class="fa fa-heart Item__Icon"></i>
-                            <span class="Item__Number">700</span>
-                        </div>
-                        <div class="Overlay__Item">
-                            <i class="fa fa-comment Item__Icon"></i>
-                            <span class="Item__Number">14</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="Grid__Item">
-                    <a href="" class="Item__Link">
-                        <img src="images/imageThree.jpg" alt="" class="Link__Image">
-                    </a>
-                    <div class="Item__Overlay">
-                        <div class="Overlay__Item">
-                            <i class="fa fa-heart Item__Icon"></i>
-                            <span class="Item__Number">700</span>
-                        </div>
-                        <div class="Overlay__Item">
-                            <i class="fa fa-comment Item__Icon"></i>
-                            <span class="Item__Number">14</span>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
@@ -143,6 +118,44 @@
         </div>
 
     </main>
+
+    <footer class="Footer">
+        <nav class="Footer__Nav">
+            <ul class="Footer__List">
+                <li class="Footer__Item">
+                    <a href="#" class="Footer__Link">About us</a>
+                </li>
+                <li class="Footer__Item">
+                    <a href="" class="Footer__Link">Support</a>
+                </li>
+                <li class="Footer__Item">
+                    <a href="" class="Footer__Link">Blog</a>
+                </li>
+                <li class="Footer__Item">
+                    <a href="" class="Footer__Link">Press</a>
+                </li>
+                <li class="Footer__Item">
+                    <a href="" class="Footer__Link">Api</a>
+                </li>
+                <li class="Footer__Item">
+                    <a href="" class="Footer__Link">Jobs</a>
+                </li>
+                <li class="Footer__Item">
+                    <a href="" class="Footer__Link">Privacy</a>
+                </li>
+                <li class="Footer__Item">
+                    <a href="" class="Footer__Link">Terms</a>
+                </li>
+                <li class="Footer__Item">
+                    <a href="" class="Footer__Link">Directory</a>
+                </li>
+                <li class="Footer__Item">
+                    <a href="" class="Footer__Link">Language</a>
+                </li>
+            </ul>
+        </nav>
+        <span class="Footer__Copyright">© 2017 Instagram</span>
+    </footer>
 
 </body>
 </html>

@@ -33,59 +33,56 @@
         </div>    
     </nav>
     
-    <main>
+    <main role="main">
 
-        <div class="EditProfile">
+        <article class="Edit-Profile">
 
-            <header class="EditProfile__Header">
+            <header class="Edit-Profile__Header">
                 
-                <div class="Header__Colum">
-                    <img src="images/avatar.jpg" alt="" class="Column__Image" />
+                <div class="Edit-Profile__Avatar-Container">
+                    <img src="images/avatar.jpg" alt="" class="Edit-Profile__Avatar" />
                 </div>
-                <div class="Header__Colum">
-
-                    <h2 class="Column__Title">serranoarevalo</h2>
-
-                </div>
+                
+                <h2 class="Edit-Profile__Name">serranoarevalo</h2>
 
             </header>
 
-            <form action="#" method="GET" class="EditProfile__Form">
+            <form action="#" method="GET" class="Edit-Profile__Form">
                 
-                <div class="Form__Row">
-                    <label for="name" class="Row__Label">Name</label>
-                    <input type="text" id="name" name="name" class="Row__Input" />
+                <div class="Edit-Profile__Form-Row">
+                    <label for="name" class="Edit-Profile__Label">Name</label>
+                    <input type="text" id="name" name="name" class="Edit-Profile__Input" />
                 </div>
 
-                <div class="Form__Row">
-                    <label for="username" class="Row__Label">Username</label>
-                    <input name="username" type="text" id="username" class="Row__Input" />
+                <div class="Edit-Profile__Form-Row">
+                    <label for="username" class="Edit-Profile__Label">Username</label>
+                    <input name="username" type="text" id="username" class="Edit-Profile__Input" />
                 </div>
 
-                <div class="Form__Row">
-                    <label for="website" class="Row__Label">Website</label>
-                    <input name="website" type="url" id="website" class="Row__Input" />
+                <div class="Edit-Profile__Form-Row">
+                    <label for="website" class="Edit-Profile__Label">Website</label>
+                    <input name="website" type="url" id="website" class="Edit-Profile__Input" />
                 </div>
 
-                <div class="Form__Row">
-                    <label for="bio" class="Row__Label">Bio</label>
-                    <textarea class="Row__Textarea" name="bio" id="bio" cols="60" rows="5" minlength="10"></textarea>
+                <div class="Edit-Profile__Form-Row">
+                    <label for="bio" class="Edit-Profile__Label">Bio</label>
+                    <textarea class="Edit-Profile__Input" name="bio" id="bio" cols="60" rows="5" minlength="10"></textarea>
                 </div>
 
-                <h4 class="Form__Subtitle">Private Information</h4>
+                <h4 class="Edit-Profile__Subtitle">Private Information</h4>
 
-                <div class="Form__Row">
-                    <label for="email" class="Row__Label">Email</label>
-                    <input name="email" id="email" type="email" class="Row__Input" />
+                <div class="Edit-Profile__Form-Row">
+                    <label for="email" class="Edit-Profile__Label">Email</label>
+                    <input name="email" id="email" type="email" class="Edit-Profile__Input" />
                 </div>
 
-                <div class="Form__Row">
-                    <label for="phone" class="Row__Label">Phone Number</label>
-                    <input name="phone" type="text" name="phone" id="phone" class="Row__Input" />
+                <div class="Edit-Profile__Form-Row">
+                    <label for="phone" class="Edit-Profile__Label">Phone Number</label>
+                    <input name="phone" type="text" name="phone" id="phone" class="Edit-Profile__Input" />
                 </div>
 
-                <div class="Form__Row">
-                    <label for="gender" class="Row__Label">Gender</label>
+                <div class="Edit-Profile__Form-Row">
+                    <label for="gender" class="Edit-Profile__Label">Gender</label>
                     <select name="gender" id="gender">
                         <option value="male">Male</option>
                         <option value="female">Female</option>
@@ -93,20 +90,20 @@
                     </select>
                 </div>
 
-                <div class="Form__Row">
-                    <span  class="Row__Label">Similar Account Suggestions</span>
+                <div class="Edit-Profile__Form-Row">
+                    <span  class="Edit-Profile__Label">Similar Account Suggestions</span>
                     <input type="checkbox" name="suggestions" id="suggestions" checked>
                     <label class="Row__Description" for="suggestions">Include your account when recommending similar accounts people might want to follow. </label><a href="#">[?]</a>
                 </div>
 
-                <div class="Form__Footer">
-                    <input type="submit" value="Submit" class="Footer__Button" />
-                    <a href="#" class="Footer__Link">Temporarily disable my account</a>
+                <div class="Edit-Profile__Footer">
+                    <input type="submit" value="Submit" class="Edit-Profile__Button" />
+                    <a href="#" class="Edit-Profile__Link">Temporarily disable my account</a>
                 </div>
 
             </form>
 
-        </div>
+        </article>
 
     </main>
 
