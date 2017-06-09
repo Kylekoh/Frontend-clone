@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Profile | Instaclone</title>
+</head>
+<body>
+    <header class="Header">
+    
+        <div class="Header__Column">
+            
+            <a href="feed.html">
+                <img src="images/headerImage.png" alt="Logo" class="Column__Logo">
+            </a>
+
+        </div>
+
+        <div class="Header__Column">
+
+                <input type="text" class="Colum__Input" placeholder="Search">
+    
+        </div>
+
+        <div class="Header__Column">
+
+            <!-- a.Column__Link*3>i.fa -->
+
+            <a href="explore.html" class="Column__Link">
+                <i class="fa fa-compass"></i>
+            </a>
+            <a href="#" class="Column__Link">
+                <i class="fa fa-heart-o"></i>
+            </a>
+            <a href="profile.html" class="Column__Link">
+                <i class="fa fa-user-o"></i>
+            </a>
+
+        </div>
+    
+    </header>
+    
+    <main>
+
+        <div class="EditProfile">
+
+            <header class="EditProfile__Header">
+                
+                <div class="Header__Colum">
+                    <img src="images/avatar.jpg" alt="" class="Column__Image" />
+                </div>
+                <div class="Header__Colum">
+
+                    <h2 class="Column__Title">serranoarevalo</h2>
+
+                </div>
+
+            </header>
+
+            <form action="#" method="GET" class="EditProfile__Form">
+                
+                <div class="Form__Row">
+                    <label for="name" class="Row__Label">Name</label>
+                    <input type="text" id="name" name="name" class="Row__Input" />
+                </div>
+
+                <div class="Form__Row">
+                    <label for="username" class="Row__Label">Username</label>
+                    <input name="username" type="text" id="username" class="Row__Input" />
+                </div>
+
+                <div class="Form__Row">
+                    <label for="website" class="Row__Label">Website</label>
+                    <input name="website" type="url" id="website" class="Row__Input" />
+                </div>
+
+                <div class="Form__Row">
+                    <label for="bio" class="Row__Label">Bio</label>
+                    <textarea class="Row__Textarea" name="bio" id="bio" cols="60" rows="5" minlength="10"></textarea>
+                </div>
+
+                <h4 class="Form__Subtitle">Private Information</h4>
+
+                <div class="Form__Row">
+                    <label for="email" class="Row__Label">Email</label>
+                    <input name="email" id="email" type="email" class="Row__Input" />
+                </div>
+
+                <div class="Form__Row">
+                    <label for="phone" class="Row__Label">Phone Number</label>
+                    <input name="phone" type="text" name="phone" id="phone" class="Row__Input" />
+                </div>
+
+                <div class="Form__Row">
+                    <label for="gender" class="Row__Label">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="not-specified">Not Specified</option>
+                    </select>
+                </div>
+
+                <div class="Form__Row">
+                    <span  class="Row__Label">Similar Account Suggestions</span>
+                    <input type="checkbox" name="suggestions" id="suggestions" checked>
+                    <label class="Row__Description" for="suggestions">Include your account when recommending similar accounts people might want to follow. </label><a href="#">[?]</a>
+                </div>
+
+                <div class="Form__Footer">
+                    <input type="submit" value="Submit" class="Footer__Button" />
+                    <a href="#" class="Footer__Link">Temporarily disable my account</a>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
